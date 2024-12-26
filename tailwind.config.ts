@@ -9,6 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sacramento: ['var(--font-sacramento)'],
+        alice: ['var(--font-alice)'],
+        montserrat: ['var(--font-montserrat-sans)'],
+      },
       screens: {
         sm: "640px",
         md: "768px",
