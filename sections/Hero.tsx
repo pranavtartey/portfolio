@@ -1,6 +1,7 @@
 "use client";
 import HeroParticles from "@/components/HeroParticles";
 import Tag from "@/components/Tag";
+import WordRotate from "@/components/ui/word-rotate";
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -19,9 +20,11 @@ const Hero: FC = () => {
               <h1 className="font-sacramento text-6xl text-center font-bold leading-none sm:text-7xl">
                 Pranav Tartey
               </h1>
-              <h3 className="text-end font-semibold text-4xl pr-8 uppercase bg-[linear-gradient(to_right,#f542fe,#f54aae,#f9b93a,#79f54c,#1ad1fa,#f241fb,#fc59b8,#f6bb47,#74fe42,#15d0fa)] bg-clip-text text-transparent tracking-wide leading-none">
-                building
-              </h3>
+
+              <WordRotate
+                className="text-end font-semibold text-4xl pr-8 uppercase bg-[linear-gradient(to_right,#f542fe,#f54aae,#f9b93a,#79f54c,#1ad1fa,#f241fb,#fc59b8,#f6bb47,#74fe42,#15d0fa)] bg-clip-text text-transparent tracking-wide leading-none"
+                words={["designing", "building", "optimizing"]}
+              />
             </div>
           </div>
           <p className="text-xl text-center mt-8 font-medium text-zinc-700 leading-relaxed sm:max-w-lg lg:max-w-xl mx-auto">
