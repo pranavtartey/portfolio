@@ -1,3 +1,7 @@
 section {
     background : linear-gradient(to-right,#f542fe,#f54aae,#f9b93a,#79f54c,#1ad1fa,#f241fb,#fc59b8,#f6bb47,#74fe42,#15d0fa)
 }
+
+div {
+    background-color: radial-gradient(farthest-side,rgba(255, 221, 50, 0.703) 100%,rgba(255, 221, 50, 0.235) 0%);
+}

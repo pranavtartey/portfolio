@@ -16,8 +16,8 @@ import DockerLogo from "@/assets/devicon-plain_docker-wordmark.svg";
 
 const LogoTicker: FC = () => {
   return (
-    <section className="py-8 md:py-12 bg-stone-100">
-      <p className="font-semibold text-black/50 text-center mb-10">Can be trusted with these technologies</p>
+    <section className="py-8 md:py-12 bg-stone-50">
+      <p className="font-semibold text-neutral-400 text-center mb-10">Can be trusted with these technologies</p>
       <div className="container">
         <div className="flex overflow-x-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div
