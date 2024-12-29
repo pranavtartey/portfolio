@@ -1,4 +1,5 @@
 import AppTag from "@/sections/AppTag";
+import Backend from "@/sections/Backend";
 import Experience from "@/sections/Experience";
 import Frontend from "@/sections/Frontend";
 import Hero from "@/sections/Hero";
@@ -16,6 +17,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Frontend />
+      <Backend />
     </>
   );
 }

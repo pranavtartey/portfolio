@@ -41,7 +41,7 @@ const FrontendCard: FC<FrontendCardProps> = ({
   });
 
   return (
-    <div className="relative p-8 space-y-6 max-w-xs border border-neutral-400 rounded-2xl mx-auto flex-1 hover:shadow-lg transition">
+    <div className="relative p-8 space-y-6 max-w-xs border border-neutral-400 rounded-2xl mx-auto flex-1 hover:shadow-lg transition overflow-hidden">
       <motion.div
         ref={borderRef}
         className="absolute inset-0 -z-10 border-2 border-purple-800 rounded-2xl"
