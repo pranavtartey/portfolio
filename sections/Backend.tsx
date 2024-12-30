@@ -45,8 +45,8 @@ const Backend: FC = () => {
               className="mx-auto rounded-xl [mask-image:linear-gradient(to_bottom,black_90%,transparent)] border-2 border-yellow-400 shadow-yellow-300  lg:w-[900px]"
             />
           </motion.div>
-          <div className="mt-10 flex-1">
-            <div className="p-4 flex flex-col gap-4">
+          <div className="mt-10">
+            <div className="lg:flex gap-4 max-lg:space-y-4">
               {backendProjects.map((project, idx) => (
                 <BackendCard {...project} key={idx} />
               ))}

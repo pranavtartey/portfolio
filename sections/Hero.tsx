@@ -9,7 +9,7 @@ import { twMerge } from "tailwind-merge";
 const Hero: FC = () => {
   return (
     <>
-      <section className="relative py-[72px]">
+      <section id="hero" className="relative py-[72px]">
         <HeroParticles
           id="particles"
           className="absolute top-0 -z-10 h-full w-full"
@@ -31,14 +31,18 @@ const Hero: FC = () => {
               />
             </div>
           </div>
-          <p className="text-lg sm:text-xl text-center mt-8 font-medium text-zinc-700 leading-relaxed max-w-sm sm:max-w-lg lg:max-w-xl mx-auto">
+          <p className="text-lg sm:text-xl text-center mt-8 font-medium text-neutral-700 leading-relaxed max-w-sm sm:max-w-lg lg:max-w-xl mx-auto">
             Currently pursuing bachelor's degree in Science and Engineering with
             a cgpa of 7.71. Actively looking for freshers & intern opportunities
             in MERN Stack.
           </p>
           <div className="space-x-4 mt-6 flex items-center justify-center">
-            <Button variant="primary">Hire me</Button>
-            <Button variant="secondary">View my work</Button>
+            <a target="_blank" href="https://drive.google.com/file/d/1xWj-XsRDheBSk1ZqSqAN-ph7aRtvUxeo/view?usp=drive_link">
+              <Button variant="primary">Resume</Button>
+            </a>
+            <a href="#experience">
+              <Button variant="secondary">View my work</Button>
+            </a>
           </div>
         </div>
       </section>

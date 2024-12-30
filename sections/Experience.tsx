@@ -4,7 +4,7 @@ import { FC } from "react";
 
 const Experience: FC = () => {
   return (
-    <section className="py-[72px]">
+    <section id="experience" className="py-[72px]">
       <div className="container">
         <h2 className="uppercase text-4xl sm:text-6xl text-center tracking-widest font-medium mb-12 bg-gradient-to-t from-black to-slate-600 bg-clip-text text-transparent">
           experience
