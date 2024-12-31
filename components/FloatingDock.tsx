@@ -35,27 +35,27 @@ const FloatingDockCore = () => {
   const links: Link[] = [
     {
       title: "Home",
-      icon: <IconHome className="h-full w-full text-neutral-500" />,
+      icon: <IconHome className="h-full w-full text-neutral-900" />,
       href: "#hero",
     },
     {
       title: "Resume",
-      icon: <IconFileCv className="h-full w-full text-neutral-500" />,
+      icon: <IconFileCv className="h-full w-full text-neutral-900" />,
       href: "https://drive.google.com/file/d/1xWj-XsRDheBSk1ZqSqAN-ph7aRtvUxeo/view?usp=drive_link",
     },
     {
       title: "Twitter",
-      icon: <IconBrandX className="h-full w-full text-neutral-500" />,
+      icon: <IconBrandX className="h-full w-full text-neutral-900" />,
       href: "https://x.com/pranav_tartey",
     },
     {
       title: "Linkedin",
-      icon: <IconBrandLinkedin className="h-full w-full text-neutral-500" />,
+      icon: <IconBrandLinkedin className="h-full w-full text-neutral-900" />,
       href: "https://www.linkedin.com/in/pranavtartey/",
     },
     {
       title: "Github",
-      icon: <IconBrandGithub className="h-full w-full text-neutral-500" />,
+      icon: <IconBrandGithub className="h-full w-full text-neutral-900" />,
       href: "https://github.com/pranavtartey",
     },
   ];
@@ -137,7 +137,7 @@ export const IconContainer = ({
           width,
           height,
         }}
-        className="flex items-center justify-center gap-4 bg-neutral-200 rounded-full relative"
+        className="flex items-center justify-center gap-4 bg-neutral-300 rounded-full relative"
       >
         <AnimatePresence>
           {hovered && (

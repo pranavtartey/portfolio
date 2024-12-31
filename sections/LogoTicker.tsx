@@ -1,18 +1,19 @@
 "use client";
 import { FC } from "react";
 import { motion } from "framer-motion";
-import JavaScriptLogo from "@/assets/akar-icons_javascript-fill.svg";
-import TypeScriptLogo from "@/assets/akar-icons_typescript-fill.svg";
-import NodeJsLogo from "@/assets/logos_nodejs.svg";
-import MongoDBLogo from "@/assets/logos_mongodb.svg";
-import PostmanLogo from "@/assets/devicon-plain_postman.svg";
-import ReactLogo from "@/assets/devicon_react-wordmark.svg";
-import PostgreSQLLogo from "@/assets/devicon-plain_postgresql-wordmark.svg";
-import NextJSLogo from "@/assets/logos_nextjs.svg";
-import PrismaLogo from "@/assets/file-icons_prisma.svg";
-import TailwindLogo from "@/assets/vscode-icons_file-type-tailwind.svg";
-import ExpressLogo from "@/assets/simple-icons_express.svg";
-import DockerLogo from "@/assets/devicon-plain_docker-wordmark.svg";
+import JavaScriptLogo from "@/assets/javascript-png.png";
+import TypeScriptLogo from "@/assets/typescript-png.png"
+import NodeJsLogo from "@/assets/nodejs-png.png";
+import MongoDBLogo from "@/assets/mongodb-png.png";
+import PostmanLogo from "@/assets/postman-png.png";
+import ReactLogo from "@/assets/react-png.png";
+import PostgreSQLLogo from "@/assets/postgres-png.png";
+import NextJSLogo from "@/assets/nextjs-png.png";
+import PrismaLogo from "@/assets/prisma-png.png";
+import TailwindLogo from "@/assets/tailwind-png.png";
+import ExpressLogo from "@/assets/express-png.png";
+import DockerLogo from "@/assets/docker-png.png";
+import Image from "next/image";
 
 const LogoTicker: FC = () => {
   return (
@@ -32,30 +33,30 @@ const LogoTicker: FC = () => {
               repeatType: "loop",
             }}
           >
-            <JavaScriptLogo />
-            <TypeScriptLogo />
-            <NodeJsLogo />
-            <MongoDBLogo />
-            <PostmanLogo />
-            <ReactLogo />
-            <PostgreSQLLogo />
-            <NextJSLogo />
-            <PrismaLogo />
-            <TailwindLogo />
-            <ExpressLogo />
-            <DockerLogo />
-            <JavaScriptLogo />
-            <TypeScriptLogo />
-            <NodeJsLogo />
-            <MongoDBLogo />
-            <PostmanLogo />
-            <ReactLogo />
-            <PostgreSQLLogo />
-            <NextJSLogo />
-            <PrismaLogo />
-            <TailwindLogo />
-            <ExpressLogo />
-            <DockerLogo />
+            <Image src={JavaScriptLogo} alt="javascript-logo" width={70} className="w-12"/>
+            <Image src={TypeScriptLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={NodeJsLogo} alt="type-logo" width={120} className="w-24"/>
+            <Image src={MongoDBLogo} alt="type-logo" width={120} className="w-24"/>
+            <Image src={PostmanLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={ReactLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={PostgreSQLLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={NextJSLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={PrismaLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={TailwindLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={ExpressLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={DockerLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={JavaScriptLogo} alt="javascript-logo" width={70} className="w-12"/>
+            <Image src={TypeScriptLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={NodeJsLogo} alt="type-logo" width={120} className="w-24"/>
+            <Image src={MongoDBLogo} alt="type-logo" width={120} className="w-24"/>
+            <Image src={PostmanLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={ReactLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={PostgreSQLLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={NextJSLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={PrismaLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={TailwindLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={ExpressLogo} alt="type-logo" width={70} className="w-12"/>
+            <Image src={DockerLogo} alt="type-logo" width={70} className="w-12"/>
           </motion.div>
         </div>
       </div>
