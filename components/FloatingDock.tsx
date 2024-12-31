@@ -64,11 +64,11 @@ const FloatingDockCore = () => {
 
   return (
     <motion.div
-      onMouseMove={(e: any) => mouseX.set(e.pageX)}
-      onMouseLeave={(e: any) => mouseX.set(Infinity)}
+      onMouseMove={(e) => mouseX.set(e.pageX)}
+      onMouseLeave={() => mouseX.set(Infinity)}
       className="fixed h-16 bottom-10 inset-x-0 mx-auto flex items-center justify-center gap-4 bg-neutral-100/30 backdrop-blur-md w-fit px-4 rounded-lg z-50"
     >
-      {links.map((el, idx) => (
+      {links.map((el) => (
         <IconContainer key={el.title} mouseX={mouseX} el={el} />
       ))}
     </motion.div>
@@ -108,7 +108,7 @@ export const IconContainer = ({
     stiffness: 150,
     damping: 12,
   });
-  const height = useSpring(widthTransform, {
+  const height = useSpring(heightTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,

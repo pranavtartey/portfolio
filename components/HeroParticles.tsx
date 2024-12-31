@@ -1,15 +1,19 @@
-import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
-// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import {
+  type Container,
+  type ISourceOptions,
+  MoveDirection,
+  OutMode,
+} from "@tsparticles/engine";
+// import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-
-
-const HeroParticles = (props) => {
-
+const HeroParticles = ({className} : {className : string}) => {
   const [init, setInit] = useState(false);
+
   // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -25,12 +29,11 @@ const HeroParticles = (props) => {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
+  const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
   };
 
-
-  const options = useMemo(
+  const options: ISourceOptions = useMemo(
     () => ({
       fullScreen:{
         enable : false,
@@ -105,8 +108,17 @@ const HeroParticles = (props) => {
     [],
   );
 
-
-  return <Particles className={props.className} init={particlesLoaded} options={options} />; 
+  if (init) {
+    return (
+      <Particles
+        id="tsparticles"
+        className={className}
+        particlesLoaded={particlesLoaded}
+        options={options}
+      />
+    );
+  }
+  return <></>
 };
 
-export default HeroParticles;
+export default HeroParticles

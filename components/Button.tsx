@@ -11,7 +11,7 @@ const Button: FC<ButtonComponentProps> = ({ className, children, variant }) => {
       className={twMerge(
         "py-1 px-4 sm:py-2 sm:px-6 rounded-full backdrop-blur hover:tracking-wide sm:text-lg hover:scale-105 transition",
         variant === "primary" && "bg-black text-white",
-        variant === "secondary" && "border border-black/60 hover:border-black"
+        variant === "secondary" && "border border-black/60 hover:border-black", className
       )}
     >
       {children}

@@ -1,6 +1,7 @@
 "use client";
 import Button from "@/components/Button";
 import HeroParticles from "@/components/HeroParticles";
+
 import Tag from "@/components/Tag";
 import WordRotate from "@/components/ui/word-rotate";
 import { FC } from "react";
@@ -11,7 +12,6 @@ const Hero: FC = () => {
     <>
       <section id="hero" className="relative py-[72px]">
         <HeroParticles
-          id="particles"
           className="absolute top-0 -z-10 h-full w-full"
         />
         <div className="container flex flex-col justify-center ">

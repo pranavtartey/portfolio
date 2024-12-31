@@ -8,7 +8,6 @@ import {
   motion,
   useMotionTemplate,
   useMotionValue,
-  useScroll,
 } from "framer-motion";
 
 type BackendCardProps = {
