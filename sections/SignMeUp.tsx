@@ -6,10 +6,10 @@ import LinkedInLogo from "@/assets/linkedin-signup-logo.png";
 import Image from "next/image";
 
 const SignMeUp: FC = () => {
-  const email = "example@example.com";
+  const email = "pranavtartey@gmail.com";
   const subject = "Impressive Portfolio";
   const body = `
-    Dear [Recipient's Name],
+    Dear Pranav Tartey,
 
     I recently came across your portfolio and was genuinely impressed with your work.
     I would love the opportunity to connect with you at your earliest convenience to discuss potential collaboration or shared interests.
@@ -17,7 +17,7 @@ const SignMeUp: FC = () => {
     Please let me know a time that works for you.
 
     Best regards,
-    [Your Name]
+    Portfolio Visitor
   `;
 
   return (
