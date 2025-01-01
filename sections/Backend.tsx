@@ -1,6 +1,5 @@
 "use client";
 import { FC, useRef } from "react";
-import LargeImage from "@/assets/postman-ss-for-large-portfolio.png";
 import SmallImage from "@/assets/postman-ss-for-smaller-portfolio.png";
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
