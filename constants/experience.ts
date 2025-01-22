@@ -1,6 +1,6 @@
 export const experiences = [
     {
-        tag: "full-stack",
+        tag: "backend",
         title: "The Adventure Buddy",
         date: "July 2024 - Oct 2024"
     },
