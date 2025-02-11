@@ -41,7 +41,7 @@ const FloatingDockCore = () => {
     {
       title: "Resume",
       icon: <IconFileCv className="h-full w-full text-neutral-900" />,
-      href: "https://drive.google.com/file/d/1bNWonVWfoI08-6d7xqspGvNzV80bXvEs/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1J7Rz8-OYdXbnLiZYXqQe1Y0KE2cR790f/view?usp=drive_link",
     },
     {
       title: "Twitter",

@@ -37,7 +37,7 @@ const Hero: FC = () => {
           <div className="space-x-4 mt-6 flex items-center justify-center">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1bNWonVWfoI08-6d7xqspGvNzV80bXvEs/view?usp=sharing"
+              href="https://drive.google.com/file/d/1J7Rz8-OYdXbnLiZYXqQe1Y0KE2cR790f/view?usp=drive_link"
             >
               <Button variant="primary">Resume</Button>
             </a>
